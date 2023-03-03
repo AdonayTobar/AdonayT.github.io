@@ -9,9 +9,7 @@ html {
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
 }
-body{
-    
-}
+
 h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -95,6 +93,8 @@ nav div:nth-child(2) img {
     font-size: 1.5rem;
     margin-bottom: 3rem;
 }
+
+/* REdes sociales */
 
 main {
     padding-top: 18rem;
@@ -361,6 +361,7 @@ main div p:nth-child(2){
         width: 33%;
         padding-bottom: 15rem;
         height: auto;
+        padding-top: 10rem;
       }
       .descripcion {
         grid-row: 1 / 2;
@@ -375,7 +376,7 @@ main div p:nth-child(2){
       }
       footer {
         grid-row: 3 / 4;
-        grid-column: 2 / 4;
+        grid-column: 1 / 4;
         height: 5rem;
         margin-bottom: 0;
         padding-bottom: 0;
