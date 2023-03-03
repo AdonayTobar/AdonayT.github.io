@@ -163,19 +163,29 @@ main div p:nth-child(2){
     width: 18rem;
     justify-content: space-between;
     padding-top: 2rem;
+    margin: 0 auto;
 }
 .redes a {
     width: 5rem;
+}
+
+.redes a:nth-child(3) {
+    width: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 .redes  a:nth-child(1) img {
     width: 4rem;
 }
 .redes  a:nth-child(2) img {
-    width: 4.2rem;
+    width: 4.8rem;
 }
 .redes a:nth-child(3) img {
-    width: 4.8rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    padding-right: -2rem;
 }
 
 /* La parte de la descripcion */
