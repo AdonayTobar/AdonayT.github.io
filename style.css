@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background-color: #0b0c11;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #64beb5;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    position: fixed;
+    
+}
+
+nav div {
+    background-color: #0b0c11;
+    width: 5.8rem;
+    height: 5.8rem;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div img {
+    width: 5rem;
+    height: 5rem;
+}
+
+nav div:nth-child(2) img {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div:nth-child(1) img{
+    width: 18rem;
+    border-radius: 50%;
+    border: 2px solid #64beb5;
+    box-shadow: 0px 0px 5px 1px #64beb5;
+    margin-bottom: 2rem;
+}
+
+main div p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c7c7c7;
+}
+
+/* Haciendo que mi nombre se escriba el solo */
+.texto {
+    font-family: Arial, sans-serif;
+    white-space: pre-line;
+    color: white;
+   /*  position: relative; */
+}
+
+ .texto::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1em;
+    background-color: white;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+main div p:nth-child(2){
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #64beb5;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.redes a {
+    width: 5rem;
+}
+
+.redes  a:nth-child(1) img {
+    width: 4rem;
+}
+.redes  a:nth-child(2) img {
+    width: 4.2rem;
+}
+.redes a:nth-child(3) img {
+    width: 4.8rem;
+}
+
+/* La parte de la descripcion */
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.descripcion h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #64beb5;
+    padding-top: 2rem;
+}
+
+.descripcion p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #c7c7c7;
+    line-height: 1.8rem;
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    text-align: center;
+}
+.proyectos div:nth-child(1) button{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 10rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    margin: 5rem 0;
+}
+.proyectos div:nth-child(1) button:nth-child(1){
+    background-color: #7bccba;
+    color: white;
+}
+.proyectos div:nth-child(1) button:nth-child(2){
+    background-color: #f7a541;
+    color: white;
+}
+.proyectos div:nth-child(1) button:nth-child(3){
+    background-color: #e74c3c;
+    color: white;
+}
+
+.proyectos div:nth-child(2) h2{
+    padding-top: 5rem;
+}
+
+/* Proyectos con CSS */
+
+
+/* Proyectos con JS */
+
+.js {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.js p {
+    font-size: 1.5rem;
+    color: #c7c7c7;
+}
+
+#miDiv {
+    width: 26rem;
+    height: 18rem;
+    overflow: none;
+    background-color: white;
+    margin-top: 5rem;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .enlaces {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #miDiv .but{
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: rgb(58, 170, 58);
+    width: 8rem;
+    border-radius: 1rem;
+  }
+  .but a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #miDiv div:nth-child(3){
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
