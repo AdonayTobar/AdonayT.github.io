@@ -5,34 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <nav>
-        <div>
-            <img src="./IMG/logoAdonayT.png" alt="">
-        </div>
-        <div>
-            <img src="./SVG/menu-svgrepo-com (7).svg" alt="">
-        </div>
+<body id="inicio">
+    <header >
+        <nav>
+            <div>
+                <img src="./IMG/logoAdonayT.png" alt="">
+            </div>
+            <div>
+                <img src="./SVG/menu-svgrepo-com (7).svg" alt="" class="amenu">
+            </div>
         
         
-    </nav>
-    <main>
-        <div><img src="./IMG/vcGxwKic.jpg_small" alt=""></div>
+        </nav>
+        <div class="menu inactive">
+            <div><img src="./SVG/close-lg-svgrepo-com.svg" alt="" class="cmenu"></div>
+            <div>
+                <a class="cc4" href="#inicio">INICIO</a>
+                <a class="cc" href="#habilidades">HABILIDADES</a>
+                <a class="cc1" href="#proyectos">PROYECTOS</a>
+                <a class="cc2" href="#sobremi">A CERCA DE</a>
+                <a class="cc3" href="#contacto">CONTACTO</a>
+            </div>
+        </div>  
+    </header>
+    
+    <main >
+        <div><img src="./IMG/vcGxwKic.jpg_small" alt="" id="contacto"></div>
         <div  class="">
-            <p class="texto">ADONAY TOBAR</p>
+            <p class="texto" >ADONAY TOBAR</p>
             <p>Frontend Developer</p>
         </div>
-        <div class="redes">
-            <a href=""><img src="./SVG/twitter-svgrepo-com (1).svg" alt=""></a>
-            <a href=""><img src="./SVG/github-svgrepo-com.svg" alt=""></a>
-            <a href=""><img src="./SVG/linkedin-svgrepo-com.svg" alt=""></a>
+        <div class="redes" >
+            <a href="https://twitter.com/AdonayTobar7"><img src="./SVG/twitter-svgrepo-com (1).svg" alt=""></a>
+            <a href="https://github.com/AdonayTobar"><img src="./SVG/github-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/adonay-tobar-b8394a257/"><img src="./SVG/linkedin-svgrepo-com.svg" alt=""></a>
         </div>
     </main>
-    <section class="descripcion">
+    <section class="descripcion" >
         <div>
-           <h2>¿QUIÉN SOY?</h2>
+           <h2 id="sobremi">¿QUIÉN SOY?</h2>
            <P>Soy Adonay Tobar, un entusiasta Frontend Developer que está en constante aprendizaje. Aunque no tengo experiencia profesional formal en el campo, he trabajado en proyectos propios en los que he adquirido habilidades técnicas sólidas y he demostrado mi capacidad para aprender y adaptarme rápidamente a nuevas tecnologías.
            </P>
            <p>En mi tiempo libre, también estudio en Platzi para continuar mejorando mis habilidades y estar al tanto de las últimas tendencias en tecnología.
@@ -47,17 +63,20 @@
             <p>¡Gracias por visitar mi portafolio!</p>
         </div>
     </section>
-    <section class="proyectos">
+    <section class="proyectos" >
         <div>
-            <h2>HABILIDADES</h2>
-            <div>
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>JavaScript</button>
+            <h2 id="habilidades">HABILIDADES</h2>
+            <div class="habilidades">
+                <div class="but"><p>HTML</p></div>
+                <div class="but"><p>CSS</p></div>
+                <div class="but"><p>JavaScript</p></div>
+                <div class="but"><p>SASS</p></div>
+                <div class="but"><p>TAILWIND</p></div>
+                <div class="but"><p>GIT</p></div>
             </div>
         </div>
         <div>
-            <h2>PROYECTOS</h2>
+            <h2 id="proyectos">PROYECTOS</h2>
             <div class="css">
                 
             </div>
@@ -68,12 +87,13 @@
                        <div class="but"><a href="https://adonaytobar.github.io/Punto-de-venta.github.io/">VER</a>
                        </div>
                        <div class="but">
-                        <a href="">REPO</a>
+                        <a href="https://github.com/AdonayTobar/Adonayportafolio.github.io/tree/main">REPO</a>
                        </div> 
                     </div>
                     <div>
-                        <p>HTML, CSS y JS.</p>
+                        <p>HTML, CSS, JS y Git.</p>
                         <p>Sistema de invetario y punto de venta.</p>
+                        <p>(Para ver su funcionamiento, es importante agregar productos al inventario)</p>
                     </div>
                     
                 </div>
@@ -81,6 +101,12 @@
         </div>
 
     </section>
+    <footer>
+        
+        <div>
+            <p>© 2023 Adonay Tobar - Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>

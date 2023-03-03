@@ -1,3 +1,31 @@
+//Haciendo el menu interactivo
+let aMenu = document.querySelector(".amenu");
+let cMenu = document.querySelector(".cmenu");
+let ventanaM = document.querySelector(".menu");
+let seC = document.querySelector(".cc");
+let seC1 = document.querySelector(".cc1");
+let seC2 = document.querySelector(".cc2");
+let seC3 = document.querySelector(".cc3");
+let seC4 = document.querySelector(".cc4");
+
+aMenu.addEventListener("click", abrirMenu);
+cMenu.addEventListener("click", cerrarMenu);
+seC.addEventListener("click", cerrarMenu);
+seC1.addEventListener("click", cerrarMenu);
+seC2.addEventListener("click", cerrarMenu);
+seC3.addEventListener("click", cerrarMenu);
+seC4.addEventListener("click", cerrarMenu);
+
+function abrirMenu(){
+        ventanaM.classList.remove("inactive");
+}
+
+function cerrarMenu(){
+    ventanaM.classList.add("inactive");
+}
+
+
+
 //Haciendo que mi nombre se escriba el solo
 const texto = document.querySelector(".texto").innerHTML;
 document.querySelector(".texto").innerHTML = "";
