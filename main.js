@@ -7,6 +7,37 @@ let seC1 = document.querySelector(".cc1");
 let seC2 = document.querySelector(".cc2");
 let seC3 = document.querySelector(".cc3");
 let seC4 = document.querySelector(".cc4");
+//Variables para cerrar las ventanas de los proyectos.
+let bCss = document.querySelector("#proCss");
+let bJs = document.querySelector("#proJs");
+let ventanaCss = document.querySelector(".css");
+let ventanaJs = document.querySelector(".js");
+let bGit = document.querySelector("#proGit");
+let ventanagit = document.querySelector(".git");
+
+bCss.addEventListener("click", abrirVCss);
+bJs.addEventListener("click", abrirVjs);
+bGit.addEventListener("click", abrirVgit);
+
+//Funciones para las ventanas de los proyectos
+
+function abrirVCss(){
+  ventanaCss.classList.remove("inactive");
+  ventanaJs.classList.add("inactive");
+  ventanagit.classList.add("inactive");
+}
+
+function abrirVjs(){
+  ventanaCss.classList.add("inactive");
+  ventanaJs.classList.remove("inactive");
+  ventanagit.classList.add("inactive");
+}
+function abrirVgit(){
+  ventanaCss.classList.add("inactive");
+  ventanaJs.classList.add("inactive");
+  ventanagit.classList.remove("inactive");
+}
+
 
 aMenu.addEventListener("click", abrirMenu);
 cMenu.addEventListener("click", cerrarMenu);
@@ -75,6 +106,14 @@ function mostrarLetras() {
 // Obtener el div y el iframe
 var div = document.getElementById("miDiv");
 var iframe = div.querySelector("iframe");
+
+// Ajustar el tamaño del iframe al tamaño del div
+iframe.addEventListener("load", function() {
+  iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+});
+
+var div1 = document.getElementById("miDivCss");
+var iframe = div1.querySelector("iframe");
 
 // Ajustar el tamaño del iframe al tamaño del div
 iframe.addEventListener("load", function() {
