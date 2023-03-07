@@ -14,10 +14,13 @@ let ventanaCss = document.querySelector(".css");
 let ventanaJs = document.querySelector(".js");
 let bGit = document.querySelector("#proGit");
 let ventanagit = document.querySelector(".git");
+let ventanaTail = document.querySelector(".tailwind");
+let bTail = document.querySelector("#proTail");
 
 bCss.addEventListener("click", abrirVCss);
 bJs.addEventListener("click", abrirVjs);
 bGit.addEventListener("click", abrirVgit);
+bTail.addEventListener("click", abrirVTail)
 
 //Funciones para las ventanas de los proyectos
 
@@ -25,17 +28,27 @@ function abrirVCss(){
   ventanaCss.classList.remove("inactive");
   ventanaJs.classList.add("inactive");
   ventanagit.classList.add("inactive");
+  ventanaTail.classList.add("inactive");
 }
 
 function abrirVjs(){
   ventanaCss.classList.add("inactive");
   ventanaJs.classList.remove("inactive");
   ventanagit.classList.add("inactive");
+  ventanaTail.classList.add("inactive");
 }
 function abrirVgit(){
   ventanaCss.classList.add("inactive");
   ventanaJs.classList.add("inactive");
+  ventanaTail.classList.add("inactive");
   ventanagit.classList.remove("inactive");
+}
+
+function abrirVTail(){
+  ventanaTail.classList.remove("inactive");
+  ventanaCss.classList.add("inactive");
+  ventanaJs.classList.add("inactive");
+  ventanagit.classList.add("inactive");
 }
 
 
@@ -112,10 +125,10 @@ iframe.addEventListener("load", function() {
   iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
 });
 
-var div1 = document.getElementById("miDivCss");
-var iframe = div1.querySelector("iframe");
+/* var div1 = document.getElementById("miDivCss");
+var iframe = div1.querySelector("iframe"); */
 
 // Ajustar el tamaño del iframe al tamaño del div
-iframe.addEventListener("load", function() {
+/* iframe.addEventListener("load", function() {
   iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
-});
+}); */

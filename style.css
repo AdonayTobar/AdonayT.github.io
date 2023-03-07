@@ -290,7 +290,7 @@ main div p:nth-child(2){
     width: 100%;
 }
 
-#miDivCss {
+#miDiv {
     width: 80%;
     height: 30rem;
     overflow: none;
@@ -298,12 +298,12 @@ main div p:nth-child(2){
     margin-top: 5rem;
   }
   
-  #miDivCss div:nth-child(3){
+  #miDiv div:nth-child(3){
     padding-top: 1rem;
     padding-bottom: 5rem;
   }
 
-  #miDivCss div:nth-child(3) p:nth-child(3){
+  #miDiv div:nth-child(3) p:nth-child(3){
     font-size: 1.2rem;
   }
 
@@ -363,6 +363,24 @@ main div p:nth-child(2){
     font-size: 1.2rem;
   }
 
+  /* Proyectos con tailwind */
+
+  .tailwind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  .tailwind p {
+    font-size: 1.5rem;
+    color: #c7c7c7;
+}
+
+.tailwind #miDiv {
+    margin-bottom: 13rem;
+}
+
   /* Proyectos con Git */
   .git {
     display: flex;
@@ -377,7 +395,9 @@ main div p:nth-child(2){
     color: #c7c7c7;
 }
 
-.git #miDivCss {
+
+
+.git #miDiv {
     margin-bottom: 13rem;
 }
 
