@@ -329,6 +329,10 @@ main div p:nth-child(2){
     background-color: white;
     margin-top: 5rem;
   }
+
+  .js #miDiv {
+    margin-bottom: 13rem;
+}
   
   iframe {
     width: 100%;
