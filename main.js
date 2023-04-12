@@ -105,17 +105,6 @@ function mostrarLetras() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Obtener el div y el iframe
 var div = document.getElementById("miDiv");
 var iframe = div.querySelector("iframe");
